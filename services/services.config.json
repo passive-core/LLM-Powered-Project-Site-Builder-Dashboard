@@ -1,0 +1,72 @@
+[
+  {
+    "id": "idea-classifier",
+    "name": "AI Idea Classifier",
+    "enabled": true,
+    "tab": {
+      "label": "Classifier",
+      "icon": "Bot",
+      "component": "AIIdeaClassifier"
+    },
+    "endpoint": "/functions/idea-classifier",
+    "summaryEndpoint": "/functions/idea-classifier-summary",
+    "type": "cloud-function",
+    "description": "Classifies new project ideas and assigns priority, category, estimated effort and ROI."
+  },
+  {
+    "id": "summarizer",
+    "name": "Project Summarizer",
+    "enabled": true,
+    "tab": {
+      "label": "Reports",
+      "icon": "FileText",
+      "component": "ProjectSummarizer"
+    },
+    "endpoint": "/functions/summarizer",
+    "summaryEndpoint": "/functions/summarizer-summary",
+    "type": "cloud-function",
+    "description": "Generates project status summaries and stakeholder reports." 
+  },
+  {
+    "id": "watcher-bot",
+    "name": "Automation Bots",
+    "enabled": true,
+    "tab": {
+      "label": "Bots",
+      "icon": "Bot",
+      "component": "AutomationBots"
+    },
+    "endpoint": "/functions/watcher-bot",
+    "summaryEndpoint": "/functions/watcher-bot-summary",
+    "type": "cloud-function",
+    "description": "Generic watcher bot service that monitors conditions and triggers actions." 
+  },
+  {
+    "id": "content-generator",
+    "name": "Content Generator",
+    "enabled": true,
+    "tab": {
+      "label": "Content",
+      "icon": "FileText",
+      "component": "ContentGenerator"
+    },
+    "endpoint": "/functions/content-generator",
+    "summaryEndpoint": "/functions/content-generator-summary",
+    "type": "cloud-function",
+    "description": "Generates code, marketing copy, emails, landing pages, and API docs." 
+  },
+  {
+    "id": "resource-linker",
+    "name": "Resource Linker",
+    "enabled": true,
+    "tab": {
+      "label": "Resources",
+      "icon": "Link",
+      "component": "ResourceLinker"
+    },
+    "endpoint": "/functions/resource-linker",
+    "summaryEndpoint": "/functions/resource-linker-summary",
+    "type": "cloud-function",
+    "description": "Suggests relevant resources and documentation from the knowledge base." 
+  }
+]
